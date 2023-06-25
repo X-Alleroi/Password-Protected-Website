@@ -97,7 +97,8 @@ Here are
 
 - Implement user authentication for more secure access.
 - Enhance the frontend design and user experience.
-- Add additional functionality to the protected website.
+- Implement encryption for storing and validating passcodes to enhance security.
+
 
 ## License
 
