@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Protected Website</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: form-anim 0.5s forwards;
+        }
+
+        @keyframes form-anim {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #00FF00;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: #000;
+            color: #00FF00;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00FF00;
+            color: #000;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #009900;
+        }
+
+        #video-page {
+            display: none;
+            text-align: center;
+            margin-top: 100px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: video-anim 0.5s forwards;
+        }
+
+        @keyframes video-anim {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Protected Website</h1>
+    <form id="password-form" onsubmit="return checkPasscode(event)">
+        <label for="passcode">Enter the passcode:</label>   
+        <input type="password" id="passcode" name="passcode" placeholder="Passcode" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="video-page">
+        <h2>Secret Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function checkPasscode(event) {
+            event.preventDefault();
+            var passcode = document.getElementById("passcode").value;
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    if (this.responseText === "success") {
+                        alert("Correct password");
+                        document.getElementById("password-form").style.display = "none";
+                        document.getElementById("video-page").style.display = "block";
+                    } else {
+                        location.reload();
+                    }
+                }
+            };
+            xhttp.open("POST", "main.py", true);
+            xhttp.setRequestHeader("Content-type", "text/plain");
+            xhttp.send(passcode);
+        }
+    </script>
+</body>
+</html>
