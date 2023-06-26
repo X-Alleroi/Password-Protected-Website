@@ -2,16 +2,16 @@
 
 # Protected Website with Passcode
 
-This project demonstrates a protected website that requires a passcode for access. It consists of a simple frontend interface and a backend HTTP server implemented in Python.
+This project demonstrates a password protected website that requires a passcode for access. It consists of a simple frontend interface and a backend HTTP server implemented in Python.
 
 ## Description
 
-The protected website project showcases a basic implementation of password-protected content. It includes a frontend interface where users can enter a passcode, and a backend server that validates the passcode and grants access to protected content if the passcode is correct.
+The website project showcases a basic implementation of password-protected content. It includes a frontend interface where users can enter a passcode, and a backend server that validates the passcode and grants access to protected content if the passcode is correct.
 
 ## Features
 
 - User-friendly frontend with an HTML form for entering the passcode.
-- Backend server that validates the passcode and provides access to protected content.
+- Backend server that validates the passcode and provides access to password locked content.
 - Protection against unauthorized access to the secret content.
 
 ## Prerequisites
@@ -36,7 +36,7 @@ Follow the steps below to install and run the project:
 
 ## Usage
 
-To use the protected website:
+To use the website:
 
 1. Update the `do_GET` method in `main.py` to specify the correct path to your `index.html` file. Modify the following line:
    ```python
@@ -49,7 +49,7 @@ To use the protected website:
    python main.py
    ```
 
-3. Open a web browser and visit `http://localhost:8000` to access the protected website.
+3. Open a web browser and visit `http://localhost:8000` to access the website.
 
 4. Enter the correct passcode to unlock the secret content.
 
@@ -59,11 +59,11 @@ To use the protected website:
 
 ### Frontend (index.html)
 
-The `index.html` file represents the frontend of the protected website. It contains an HTML form where users can enter a passcode. Upon submission, the passcode is sent to the server for validation.
+The `index.html` file represents the frontend of the website. It contains an HTML form where users can enter a passcode. Upon submission, the passcode is sent to the server for validation.
 
 ### Backend (main.py)
 
-The `main.py` file represents the backend of the protected website. It sets up an HTTP server using Python's `HTTPServer` and `SimpleHTTPRequestHandler` classes.
+The `main.py` file represents the backend of the website. It sets up an HTTP server using Python's `HTTPServer` and `SimpleHTTPRequestHandler` classes.
 
 #### CustomHandler Class
 
@@ -98,6 +98,7 @@ Here are
 - Implement user authentication for more secure access.
 - Enhance the frontend design and user experience.
 - Implement encryption for storing and validating passcodes to enhance security.
+- Secure the second page to prevent viewing the HTML code before entering the correct password.
 
 
 ## License
