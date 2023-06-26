@@ -115,8 +115,5 @@ Contributions are welcome! If you find any issues or want to enhance the project
 
 ## Contact
 
-If you have any questions or suggestions, please feel free to reach out to the project maintainers.
+If you have any questions or suggestions, please feel free to reach out.
 
----
-
-Please note that this is just an example README.md file. You should adapt it based on the specific details and requirements of your project.
