@@ -26,7 +26,7 @@ Follow the steps below to install and run the project:
 
 1. Clone the repository:
    ```bash
-   git clone [<repository_url>](https://github.com/DataDeity/Password-Protected-Website)
+   git clone https://github.com/DataDeity/Password-Protected-Website
    ```
 
 2. Navigate to the project directory:
