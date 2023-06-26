@@ -117,3 +117,6 @@ Contributions are welcome! If you find any issues or want to enhance the project
 
 If you have any questions or suggestions, please feel free to reach out.
 
+## License
+
+This code is released under the [MIT License](https://opensource.org/licenses/MIT).
