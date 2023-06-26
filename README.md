@@ -26,12 +26,12 @@ Follow the steps below to install and run the project:
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone [<repository_url>](https://github.com/DataDeity/Password-Protected-Website)
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd protected-website-with-passcode
+   cd Password-Protected-Website
    ```
 
 ## Usage
@@ -44,7 +44,7 @@ To use the protected website:
    ```
    Replace `"path/to/index.html"` with the actual path to your `index.html` file.
 
-2. Start the HTTP server by running the `main.py` script:
+2. Start the HTTP server by running the `main.py` script:Fcf
    ```bash
    python main.py
    ```
