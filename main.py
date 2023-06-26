@@ -2,7 +2,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 class CustomHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        self.path = "Python And Html/Website projects/Website Project security/index.html"
+        self.path = "SET PATH HERE!"
         return super().do_GET()
 
     def do_POST(self):
