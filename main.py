@@ -9,7 +9,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
         content_length = int(self.headers['Content-Length'])
         password = self.rfile.read(content_length).decode('utf-8')
 
-        if password == "67611":
+        if password == "Password here!":
             response = "success"
         else:
             response = "failure"
