@@ -101,10 +101,6 @@ Here are
 - Secure the second page to prevent viewing the HTML code before entering the correct password.
 
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 The project was inspired by the need for simple password protection in web applications.
