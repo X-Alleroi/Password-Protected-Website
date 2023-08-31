@@ -98,7 +98,7 @@ Here are
 - Implement user authentication for more secure access.
 - Enhance the frontend design and user experience.
 - Implement encryption for storing and validating passcodes to enhance security.
-- Secure the second page to prevent viewing the HTML code before entering the correct password.
+- Secure the second page to prevent viewing the contents bfore entering the correct password.
 
 
 ## Acknowledgments
