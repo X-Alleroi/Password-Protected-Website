@@ -2,7 +2,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 
 class CustomHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        self.path = "Password-Protected-Website-main/index.html"
+        self.path = "Password-Protected-Website/index.html"
         return super().do_GET()
 
     def do_POST(self):
