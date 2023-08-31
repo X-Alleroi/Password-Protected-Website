@@ -103,7 +103,7 @@ Here are
 
 ## Acknowledgments
 
-The project was inspired by the need for simple password protection in web applications.
+The project was inspired by the TheInvasionHasBegun.com
 
 ## Contributing
 
